@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>clicker</title>
+</head>
+<body  onclick="dfd()" id="bg" style="width: 100wh ; height: 100vh ;">
+
+<h2 align="center" id="i">0</h2>
+<audio id="click" src="00171.mp3"></audio>
+</body>
+<script>
+    c = 0;
+    z = 0;
+function dfd() {
+    c = c + 1;
+    z = z + 1;
+    if (z==4){
+        z=0
+    }
+    document.getElementById("i").innerHTML = c;
+    document.getElementById("click").play();
+        if (z==1){
+            document.getElementById("bg").style.background = 'red';
+        }
+        if (z==2){
+            document.getElementById("bg").style.background = 'blue';
+        }
+        if (z==3){
+            document.getElementById("bg").style.background = 'purple';
+        }
+        if (z==0){
+            document.getElementById("bg").style.background = 'white';
+        }
+}
+
+</script>
+</html>
